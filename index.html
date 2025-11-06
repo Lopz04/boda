@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Boda — Alejandra & Jeisson</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* ===== Ajustes para visualización responsiva ===== */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    iframe {
+      max-width: 100%;
+    }
+
+    /* Ocultar las plantas decorativas en pantallas pequeñas */
+    @media (max-width: 768px) {
+      .planta {
+        display: none !important;
+      }
+    }
+
+    /* Asegurar que el contenido se vea centrado en móviles */
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Ajuste del texto en móviles */
+    .titulo, .subtitulo, .nombres, .texto {
+      word-wrap: break-word;
+      max-width: 100%;
+    }
+
+    /* Evitar que las imágenes se salgan del contenedor */
+    .imagen, .imagen-mensaje {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    /* En móviles, reducir márgenes y tamaños de fuente grandes */
+    @media (max-width: 480px) {
+      .nombres {
+        font-size: 2rem;
+      }
+
+      .titulo {
+        font-size: 1.5rem;
+      }
+
+      .texto {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Plantas decorativas laterales -->
+  <img src="src/planta.png" class="planta planta-left" alt="decoración izquierda" aria-hidden="true">
+  <img src="src/planta.png" class="planta planta-right" alt="decoración derecha" aria-hidden="true">
+
+  <!-- ===== PORTADA ===== -->
+  <section class="V1 fade-in">
+    <h4 class="subtitulo">NUESTRA BODA</h4>
+    <h1 class="nombres">Alejandra <br><span>&</span><br> Jeisson</h1>
+
+    <div class="imagen">
+      <img src="src/hanna.jpeg" alt="Ilustración Alejandra, Jeisson y su mascota">
+    </div>
+  </section>
+
+  <!-- ===== AUDIO ===== -->
+  <audio id="audio-player" src="src/audio.mp3" preload="auto" loop playsinline></audio>
+
+  <!-- ===== MENSAJE ===== -->
+  <section class="V2 fade-in">
+    <h2 class="titulo">Inicia una <br><span>nueva etapa</span></h2>
+
+    <p class="texto">
+      A veces, la vida nos lleva por caminos diferentes, pero siempre con la certeza de que
+      lo que está destinado a suceder, sucede. Hoy celebramos no solo nuestro amor, sino el
+      habernos encontrado entre tantas posibilidades, y convertir un futuro juntos.
+    </p>
+
+    <div class="imagen-mensaje">
+      <img src="src/boda.jpeg" alt="Pareja besándose al atardecer">
+    </div>
+  </section>
+
+  <!-- ===== DÍA ESPECIAL ===== -->
+  <section class="V3 fade-in">
+    <h2 class="titulo">Sé parte de este <br><span>día especial</span></h2>
+
+    <p class="texto">
+      Queremos que estés con nosotros en este día tan especial, porque una boda sin las personas
+      que hacen cada momento único no sería lo mismo. Así que marca la fecha y prepárate para celebrarlo con nosotros.
+    </p>
+
+    <div class="info">
+      <div class="info-item">
+        <i class="fa-regular fa-calendar-days"></i>
+        <strong>Fecha:</strong>&nbsp;19 de Diciembre de 2025
+      </div>
+
+      <div class="info-item">
+        <i class="fa-regular fa-clock"></i>
+        <strong>Hora:</strong>&nbsp;03:30 PM &nbsp; <small>Es muy importante tu puntualidad</small>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-solid fa-shirt"></i>
+        <strong>Vestimenta:</strong>&nbsp;Se sugiere atuendo semi formal. Los colores blanco y rojo están reservados.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LUGAR ===== -->
+  <section class="V4 fade-in">
+    <h2 class="titulo"><span>Lugar</span></h2>
+    <p class="texto">
+      Te esperamos en Restaurante Gourmet Barro Viejo, en Tabio, Cundinamarca.
+    </p>
+
+    <div class="imagen-mensaje">
+      <iframe 
+        src="https://www.google.com/maps?q=Restaurante+Gourmet+Barro+Viejo,+Tabio,+Cundinamarca&output=embed" 
+        width="100%" height="250" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== CONFIRMACIÓN Y CONTADOR ===== -->
+  <section class="V5 fade-in">
+    <h2 class="titulo">¡Avísanos si puedes <br><span>venir a la boda!</span></h2>
+
+    <div class="imagen-mensaje">
+      <img src="src/trigal.jpeg" alt="Pareja feliz">
+    </div>
+
+    <div class="confirmacion">
+      <button onclick="window.open('https://api.whatsapp.com/send?phone=573124741011&text=Hola!%20confirmo%20mi%20asistencia%20a%20la%20boda%20%F0%9F%A4%97%F0%9F%91%8F%F0%9F%8F%BB')">
+        Confirmar Asistencia
+      </button>
+    </div>
+
+    <div class="countdown">
+      <p>¡Deja todo listo, que el gran día ya está cerca!</p>
+      <div class="time">
+        <span id="dias">0</span> Días |
+        <span id="horas">0</span> H |
+        <span id="minutos">0</span> Min |
+        <span id="segundos">0</span> S
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OVERLAY ===== -->
+  <div id="tap-to-play" class="tap-to-play" aria-hidden="false">Toca para escuchar 💖</div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/main.js"></script>
+
+  <script>
+    // Al recargar la página, volver siempre al principio
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+
+    // Reproducción automática del audio con overlay animado
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('audio-player');
+      const tapToPlay = document.getElementById('tap-to-play');
+
+      const playPromise = audio.play();
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            tapToPlay.classList.remove('show');
+            tapToPlay.style.display = 'none';
+          })
+          .catch(() => {
+            // Mostrar overlay con fade-in suave
+            tapToPlay.classList.add('show');
+            tapToPlay.style.display = 'flex';
+            tapToPlay.addEventListener('click', () => {
+              audio.play();
+              tapToPlay.classList.remove('show');
+              setTimeout(() => (tapToPlay.style.display = 'none'), 600);
+            });
+          });
+      }
+    });
+  </script>
+
+  <!-- ===== ESTILO DEL OVERLAY CON ANIMACIÓN ===== -->
+  <style>
+    .tap-to-play {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .tap-to-play.show {
+      display: flex;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+      }
+      to {
+        opacity: 1;
+        backdrop-filter: blur(4px);
+      }
+    }
+  </style>
+</body>
+</html>
