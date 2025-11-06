@@ -1,0 +1,197 @@
+/* === ESTILO GENERAL === */
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #fffaf3;
+  color: #2b2b2b;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* === PLANTAS DECORATIVAS === */
+.planta {
+  position: fixed;
+  top: 0;
+  width: 180px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.planta-left {
+  left: -20px;
+  transform: rotate(10deg);
+}
+
+.planta-right {
+  right: -20px;
+  transform: rotate(-10deg);
+}
+
+/* === PORTADA === */
+.V1 {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.subtitulo {
+  letter-spacing: 2px;
+  color: #7c7261;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.nombres {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 15px 0 25px;
+  color: #2b2b2b;
+}
+
+.nombres span {
+  font-size: 2.2rem;
+  color: #b08f6f;
+}
+
+.imagen img {
+  border-radius: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* === MENSAJES === */
+.V2, .V3, .V4, .V5 {
+  padding: 60px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2b2b2b;
+}
+
+.titulo span {
+  color: #b08f6f;
+}
+
+.texto {
+  line-height: 1.6;
+  color: #4b4b4b;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* === IMAGEN CENTRAL === */
+.imagen-mensaje img {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* === INFORMACIÓN DEL EVENTO === */
+.info {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.info-item img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.info-item strong {
+  color: #b08f6f;
+}
+
+/* === CONTADOR REGRESIVO === */
+.countdown {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+.countdown .time {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.countdown small {
+  display: block;
+  color: #b08f6f;
+  font-weight: normal;
+}
+
+/* === CONFIRMACIÓN === */
+.confirmacion {
+  margin-top: 40px;
+}
+
+.confirmacion button {
+  background-color: #b08f6f;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.confirmacion button:hover {
+  background-color: #a07f5e;
+}
+
+/* === FADE IN ANIMATION === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === OVERLAY AUDIO === */
+.tap-to-play {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 245, 230, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #6b5c48;
+  z-index: 1000;
+}
+.info-item i {
+  font-size: 1.4rem;
+  width: 25px;
+  margin-right: 10px;
+  color: #b08f6f;
+}
