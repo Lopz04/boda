@@ -13,69 +13,13 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css">
 
-  <style>
-    /* ===== Ajustes para visualización responsiva ===== */
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    iframe {
-      max-width: 100%;
-    }
-
-    /* Ocultar las plantas decorativas en pantallas pequeñas */
-    @media (max-width: 768px) {
-      .planta {
-        display: none !important;
-      }
-    }
-
-    /* Asegurar que el contenido se vea centrado en móviles */
-    section {
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* Ajuste del texto en móviles */
-    .titulo, .subtitulo, .nombres, .texto {
-      word-wrap: break-word;
-      max-width: 100%;
-    }
-
-    /* Evitar que las imágenes se salgan del contenedor */
-    .imagen, .imagen-mensaje {
-      overflow: hidden;
-      border-radius: 10px;
-    }
-
-    /* En móviles, reducir márgenes y tamaños de fuente grandes */
-    @media (max-width: 480px) {
-      .nombres {
-        font-size: 2rem;
-      }
-
-      .titulo {
-        font-size: 1.5rem;
-      }
-
-      .texto {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  
 </head>
 
 <body>
   <!-- Plantas decorativas laterales -->
   <img src="src/planta.png" class="planta planta-left" alt="decoración izquierda" aria-hidden="true">
-  <img src="src/planta.png" class="planta planta-right" alt="decoración derecha" aria-hidden="true">
+  <img src="src/planta2.png" class="planta planta-right" alt="decoración derecha" aria-hidden="true">
 
   <!-- ===== PORTADA ===== -->
   <section class="V1 fade-in">
@@ -92,12 +36,10 @@
 
   <!-- ===== MENSAJE ===== -->
   <section class="V2 fade-in">
-    <h2 class="titulo">Inicia una <br><span>nueva etapa</span></h2>
+    <h2 class="titulo">Inicia una <br><span>nueva etapa 👩🏻‍❤️‍💋‍👨🏻</span></h2>
 
     <p class="texto">
-      A veces, la vida nos lleva por caminos diferentes, pero siempre con la certeza de que
-      lo que está destinado a suceder, sucede. Hoy celebramos no solo nuestro amor, sino el
-      habernos encontrado entre tantas posibilidades, y convertir un futuro juntos.
+      La vida puede llevarnos por distintos caminos, pero lo que está destinado a suceder, sucede. Hoy celebramos no solo nuestro amor, sino el milagro de habernos encontrado entre tantas opciones, y el comenzar un futuro juntos.
     </p>
 
     <div class="imagen-mensaje">
@@ -107,7 +49,7 @@
 
   <!-- ===== DÍA ESPECIAL ===== -->
   <section class="V3 fade-in">
-    <h2 class="titulo">Sé parte de este <br><span>día especial</span></h2>
+    <h2 class="titulo">Sé parte de este <br><span>día especial✨</span></h2>
 
     <p class="texto">
       Queremos que estés con nosotros en este día tan especial, porque una boda sin las personas
@@ -117,24 +59,35 @@
     <div class="info">
       <div class="info-item">
         <i class="fa-regular fa-calendar-days"></i>
-        <strong>Fecha:</strong>&nbsp;19 de Diciembre de 2025
+        <div class="info-content">
+          <strong>Fecha:</strong>
+          <span class="detalle">Viernes, 19 de Diciembre de 2025</span>
+        </div>
       </div>
 
       <div class="info-item">
         <i class="fa-regular fa-clock"></i>
-        <strong>Hora:</strong>&nbsp;03:30 PM &nbsp; <small>Es muy importante tu puntualidad</small>
+        <div class="info-content">
+          <strong>Hora:</strong>
+          <span class="detalle">03:30 PM</span>
+          <small>Tu puntualidad será muy importante</small>
+        </div>
       </div>
 
       <div class="info-item">
         <i class="fa-solid fa-shirt"></i>
-        <strong>Vestimenta:</strong>&nbsp;Se sugiere atuendo semi formal. Los colores blanco y rojo están reservados.
+        <div class="info-content">
+          <strong>Vestimenta:</strong>
+          <span class="detalle">Atuendo semi formal</span>
+          <small>Colores blanco y rojo reservados</small>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== LUGAR ===== -->
   <section class="V4 fade-in">
-    <h2 class="titulo"><span>Lugar</span></h2>
+    <h2 class="titulo"><span>Lugar📍</span></h2>
     <p class="texto">
       Te esperamos en Restaurante Gourmet Barro Viejo, en Tabio, Cundinamarca.
     </p>
@@ -156,13 +109,13 @@
     </div>
 
     <div class="confirmacion">
-      <button onclick="window.open('https://api.whatsapp.com/send?phone=573124741011&text=Hola!%20confirmo%20mi%20asistencia%20a%20la%20boda%20%F0%9F%A4%97%F0%9F%91%8F%F0%9F%8F%BB')">
+      <button onclick="window.open('https://api.whatsapp.com/send?phone=573124741011&text=%F0%9F%92%8C%20%C2%A1Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20%F0%9F%92%8D%F0%9F%A5%82')">
         Confirmar Asistencia
       </button>
     </div>
 
     <div class="countdown">
-      <p>¡Deja todo listo, que el gran día ya está cerca!</p>
+      <p>¡Deja todo listo, que el gran día ya está cerca!⏳</p>
       <div class="time">
         <span id="dias">0</span> Días |
         <span id="horas">0</span> H |
@@ -210,41 +163,5 @@
       }
     });
   </script>
-
-  <!-- ===== ESTILO DEL OVERLAY CON ANIMACIÓN ===== -->
-  <style>
-    .tap-to-play {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.75);
-      color: #fff;
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.3rem;
-      letter-spacing: 1px;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      cursor: pointer;
-      opacity: 0;
-      animation: fadeIn 0.8s ease forwards;
-    }
-
-    .tap-to-play.show {
-      display: flex;
-      animation: fadeIn 1s ease forwards;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        backdrop-filter: blur(0px);
-      }
-      to {
-        opacity: 1;
-        backdrop-filter: blur(4px);
-      }
-    }
-  </style>
 </body>
 </html>
