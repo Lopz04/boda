@@ -336,3 +336,29 @@ section {
     backdrop-filter: blur(4px);
   }
 }
+
+/* Flecha para indicar que se debe hacer scroll */
+.scroll-down {
+  margin-top: 15px;
+  text-align: center;
+  animation: bounce 1.6s infinite;
+  opacity: 0.8;
+}
+
+.scroll-down i {
+  font-size: 28px;
+  color: #6a0000; /* Puedes cambiarlo al color de tu paleta */
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}
